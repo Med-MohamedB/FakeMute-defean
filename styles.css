@@ -1,0 +1,25 @@
+.vc-fvo-icon {
+    display: block;
+    color: var(--interactive-normal);
+    transition: color 150ms ease;
+}
+
+.vc-fvo-icon path {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.vc-fvo-icon .vc-fvo-icon-slash {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.vc-fvo-icon.vc-fvo-icon-active {
+    color: var(--status-danger);
+}
+
+.vc-fvo-icon.vc-fvo-icon-active .vc-fvo-icon-slash {
+    opacity: 1;
+    transform: scale(1);
+}
